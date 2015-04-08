@@ -1,0 +1,145 @@
+/*Main CSS for Lords of Dogtown.index 
+Author - Zachary Maguire*/
+
+
+/*=====================================================================================================
+Global
+=====================================================================================================*/
+
+html,
+body {
+   	height: 100%;
+      font-family: 'Cardo', serif;
+}
+
+
+body {
+      color: #000000;
+      text-align: center;
+      /*text-shadow: 0 1px 3px rgba(0,0,0,0.5);*/
+}
+
+.wrapper {
+   
+}
+
+
+
+  /*=====================================================================================================
+Main Navigation
+=====================================================================================================*/
+
+
+
+.slicknav_menu {
+      display:block;
+}
+
+ #menu {
+            display:none;
+      }
+
+.main-nav {
+      border: thick solid black; 
+}
+
+.item-nav {
+      padding: 10px 0;
+}
+
+.item-logo {
+      padding: 0;
+}
+ 
+.main-nav a {
+      border: thin solid black; 
+}
+
+.dogtown-logo {
+      max-height: 100px;
+}
+
+h1 {
+      color: black;
+      border: thin solid black;
+      padding: 15% 0;
+}
+
+.skateboard {
+      border: thin solid black;
+      padding: 15% 0;
+}
+
+  /*=====================================================================================================
+Content Boxes
+=====================================================================================================*/
+
+
+
+
+.firstbox,
+.secondbox,
+.thirdbox {
+      border: thick solid black;
+}
+
+.wrapper-inner img {
+      max-width: 100%;
+}
+
+.secondbox {
+      border: thick solid black;
+}
+
+.secondbox:hover {
+      opacity: 0.5;
+}
+
+.thirdbox {
+      background: url(images/pool3.jpg); 
+      background-size: cover;
+}
+
+.thirdbox:hover {
+      opacity: 0.5;
+}
+
+.fifthbox {
+      
+}
+
+
+
+
+
+
+  /*=====================================================================================================
+Media Queries
+=====================================================================================================*/
+
+
+ 
+@media only screen and (min-width: 768px){ 
+
+      .main-nav { 
+            padding: 50px 0 20px 0;  
+      }
+
+
+
+      /* slick nav. #menu is the original menu */
+      #menu {
+            display:none;
+      }
+      
+      .slicknav_menu {
+            display:none;
+      }
+
+
+
+ } /*closing MQ 768px*/
+
+
+
+
