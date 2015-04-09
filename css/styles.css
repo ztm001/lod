@@ -9,7 +9,7 @@ Global
 html,
 body {
    	height: 100%;
-      font-family: 'Cardo', serif;
+      font-family: 'Source Sans Pro', sans-serif;    
 }
 
 
@@ -40,7 +40,7 @@ Main Navigation
       }
 
 .main-nav {
-      border: thick solid black; 
+      
 }
 
 .item-nav {
@@ -52,23 +52,16 @@ Main Navigation
 }
  
 .main-nav a {
-      border: thin solid black; 
+      
 }
 
 .dogtown-logo {
       max-height: 100px;
 }
 
-h1 {
-      color: black;
-      border: thin solid black;
-      padding: 15% 0;
-}
 
-.skateboard {
-      border: thin solid black;
-      padding: 15% 0;
-}
+
+
 
   /*=====================================================================================================
 Content Boxes
@@ -77,10 +70,23 @@ Content Boxes
 
 
 
-.firstbox,
-.secondbox,
-.thirdbox {
-      border: thick solid black;
+/*.firstbox,*/
+.secondbox img,
+/*.thirdbox,*/
+.forthbox img,
+/*.fifthbox,*/
+.sixthbox img {
+
+      -webkit-box-shadow: 10px 10px 5px #888;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+      -moz-box-shadow: 10px 10px 5px #888;  /* Firefox 3.5 - 3.6 */
+      box-shadow: 10px 10px 5px #888;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+      
+}
+
+
+
+.wrapper {
+      padding-bottom: 30px;
 }
 
 .wrapper-inner img {
@@ -88,30 +94,82 @@ Content Boxes
 }
 
 .secondbox {
-      border: thick solid black;
+      
+      
 }
 
-.secondbox:hover {
+.secondbox img:hover {
       opacity: 0.5;
 }
 
-.thirdbox {
-      background: url(images/pool3.jpg); 
-      background-size: cover;
+.secondbox i {
+      position: absolute;
+      top: 40%;
+      left: 45%;
+      /*color: white;*/
+}
+
+.secondbox i:hover {
+      color: black;
+}
+
+
+
+.thirdbox h2 {
+      font-weight: 700;
+      font-size: 3.5em;
+      padding-top: 90px;
+
+}
+
+.thirdbox i {
+      padding-bottom: 50px;
 }
 
 .thirdbox:hover {
       opacity: 0.5;
 }
 
-.fifthbox {
-      
+.forthbox h2 {
+      font-weight: 700;
+      font-size: 3.5em;
+      position: absolute;
+      text-align: center;
+      color: white;
+}
+
+.forthbox i {
+      position: absolute;
+      top: 45%;
+      left: 45%;
+}
+
+.fifthbox h2 {
+      font-weight: 700;
+      font-size: 3.5em;
+      padding-top: 0px;
+      margin-top: 0px;
+}
+
+.fifthbox img {
+      padding-top: 25%;
 }
 
 
+  /*=====================================================================================================
+Footer
+=====================================================================================================*/
 
+footer {
+      padding: 60px 0;
+      background: black;
+      margin-top: 10px;
 
+}
 
+footer p {
+      color: white;
+}
 
   /*=====================================================================================================
 Media Queries
@@ -134,6 +192,10 @@ Media Queries
       
       .slicknav_menu {
             display:none;
+      }
+
+      .thirdbox h2 {
+            padding-top: 30%;
       }
 
 
