@@ -6,6 +6,11 @@ Author - Zachary Maguire*/
 Global
 =====================================================================================================*/
 
+/*Color Scheme
+
+hover brown #b89b7e*/
+
+
 html,
 body {
    	height: 100%;
@@ -44,7 +49,7 @@ Main Navigation
 }
 
 .item-nav {
-      padding: 10px 0;
+      padding: ;
 }
 
 .item-logo {
@@ -133,16 +138,10 @@ Content Boxes
 .forthbox h2 {
       font-weight: 700;
       font-size: 3.5em;
-      position: absolute;
-      text-align: center;
-      color: white;
 }
 
-.forthbox i {
-      position: absolute;
-      top: 45%;
-      left: 45%;
-}
+
+
 
 .fifthbox h2 {
       font-weight: 700;
@@ -154,6 +153,50 @@ Content Boxes
 .fifthbox img {
       padding-top: 25%;
 }
+
+  /*=====================================================================================================
+      Cast and Story content
+=====================================================================================================*/
+
+
+.story-content,
+.cast-content {
+      margin-bottom: 20px;
+
+}
+
+.story-content,
+.cast-content {
+      padding: 30px 0;
+}
+
+
+.cast-content p,
+.story-content p {
+      font-size: 1.5em;
+}
+
+.bord-top {
+      border-top: thick solid #b89b7e;
+      padding-top: 15px;
+}
+
+.cast-content h3,
+.story-content h3{
+      font-size: 2em;
+      font-weight: 700;
+      padding-bottom: 20px;
+      margin-bottom: 25px;
+}
+
+.cast-logo {
+      z-index: 1;
+      position: relative;
+      top: -200px;
+}
+
+
+
 
 
   /*=====================================================================================================

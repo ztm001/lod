@@ -23,6 +23,10 @@
   </head>
   <body>
 
+<!--  ======================================================================================
+Mobile Nav
+====================================================================================== -->
+
 
     <ul id="menu">
       <li><a href="#">TRAILER</a></li>
@@ -31,9 +35,13 @@
       <li><a href="#">FULL MOVIE</a></li>
     </ul>
 
-
+<!--  ======================================================================================
+Bootstrap nav
+====================================================================================== -->
 
    <div class="wrapper">
+
+
 
       
 
@@ -41,23 +49,27 @@
             <div class="row main-nav">
 
                   <div class="item-nav col-xs-6 col-sm-2 col-sm-offset-1">
-                        <a href="#" class="btn btn-default btn-block">TRAILER</a>
+                        <a href="#">TRAILER</a>
                   </div>
                   <div class="item-nav col-xs-6 col-sm-2">
-                        <a href="#" class="btn btn-default btn-block">FULL MOVIE</a>
+                        <a href="#">FULL MOVIE</a>
                   </div>
                   <div class="item-logo col-sm-2 hidden-xs clearfix">
                         <img src="images/dogtown1.gif" alt="dogtown logo" class="dogtown-logo img-responsive center-block" href="#">
                   </div>
                   <div class="item-nav col-xs-6 col-sm-2">
-                        <a href="#" class="btn btn-default btn-block">CAST</a>
+                        <a href="#">CAST</a>
                   </div>
                   <div class="item-nav col-xs-6 col-sm-2">
-                        <a href="#" class="btn btn-default btn-block">STORY</a>
+                        <a href="#">STORY</a>
                   </div>
 
             </div> <!-- closing row -->
           </div> <!-- closing container -->
+
+<!--  ======================================================================================
+First row main boxes
+====================================================================================== -->
 
 
 
@@ -87,13 +99,59 @@
 
 
 
+<!--  ======================================================================================
+    Cast and Story content
+====================================================================================== -->
+
+
+          <div class="container story-content">
+                <div class="row">
+                    <div class="col-xs-8 col-xs-offset-2">
+                        <p class="bord-top">A drought in 1970s Southern California has an unexpected side effect: as people empty their swimming pools, a group of teen surfers from the Dogtown area of Venice Beach move in with skateboards, and a new sport is born. Based on a true story, this film follows "Z-Boys" skate team members Stacy Peralta (John Robinson), Tony Alva (Victor Rasuk) and Jay Adams (Emile Hirsch), plus manager Skip Engblom (Heath Ledger), as their fearless "pool surfing" leads to fame, fortune -- and misfortune.</p>
+                    </div> <!--  closing col-xs-12 -->
+                </div>  <!-- closing row -->           
+          </div> <!-- closing container fluid -->
+
+
+            <div class="container cast-content">
+                <div class="row">
+                      <div class="col-xs-12">
+                          <h3>CAST</h3>
+                      </div>
+                </div> <!-- closing row -->
+
+                <div class="row">
+                    <div class="col-xs-8 col-xs-offset-2">
+                            <p class="bord-top">Heath Ledger as Skip Engblom</p>
+                            <p>Emile Hirsch as Jay Adams</p>
+                            <p>John Robinson as Stacy Peralta</p>
+                            <p>Victor Rasuk as Tony Alva</p>
+                            <p>Michael Angarano as Sid</p>
+                            <p>Nikki Reed as Kathy Alva</p>
+                            <p>Rebecca De Mornay as Philaine</p>
+                            <p>William Mapother as Donnie</p>
+                            <p>Vincent Laresca as Chino</p>
+                            <p>Elden Henson as Billy Z</p>
+                            <p><strong>directed by Catherine Hardwicke and written by Stacy Peralta</strong></p>
+                    </div> <!--  closing col-xs-12 -->
+                </div>  <!-- closing row -->           
+          </div> <!-- closing container fluid -->
+
+
+<!--  ======================================================================================
+  Second row main boxes
+====================================================================================== -->
+
+
+
           <div class="container">
             <div class="row">
-
                   <div class="forthbox col-sm-4">
                         <img src="images/alva.jpg" alt="Jay Adams Skateboarding image">
-                        <h2>CAST</h2>
-                        <i class="fa fa-angle-down fa-5x"></i>
+                        <div class="cast-logo">
+                              <h2>CAST</h2>
+                              <i class="fa fa-angle-down fa-5x"></i>
+                        </div>
                   </div>
 
                   <div class="fifthbox col-sm-4">
@@ -104,18 +162,20 @@
                   <div class="sixthbox col-sm-4">
                         <img src="images/night.jpg" alt="Jay Adams Skateboarding image">
                   </div>   
-
-
-
             </div>  <!-- closing row -->           
           </div> <!-- closing container fluid -->
 
 
+
+
+
+      
       </div>  <!-- closing wrapper-innter -->
-
-
-
     </div> <!-- closing wrapper -->
+
+<!--  ======================================================================================
+      Footer
+====================================================================================== -->
 
     <footer>
       <p>footer color white bold. alight to top to touch white of the page</p>
@@ -125,7 +185,8 @@
     
 
   <script src="js/jquery-1.11.2.js"></script>
-  <script src="js/jquery.slicknav.min.js"></script>
+  <script src="js/jquery.slicknav.js"></script>
+  <script src="js/custom.js"></script>
   <script>
 
         $(function(){
