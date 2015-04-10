@@ -49,7 +49,9 @@ Main Navigation
 }
 
 .item-nav {
-      padding: ;
+      font-size: 1.5em;
+      color: black;
+
 }
 
 .item-logo {
@@ -57,7 +59,12 @@ Main Navigation
 }
  
 .main-nav a {
-      
+      text-decoration: none;
+      color: black;    
+}
+
+.main-nav a:hover {
+      color: #b89b7e;    
 }
 
 .dogtown-logo {
@@ -85,6 +92,7 @@ Content Boxes
       -webkit-box-shadow: 10px 10px 5px #888;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
       -moz-box-shadow: 10px 10px 5px #888;  /* Firefox 3.5 - 3.6 */
       box-shadow: 10px 10px 5px #888;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+      border-radius: 10px;
       
 }
 
@@ -92,30 +100,22 @@ Content Boxes
 
 .wrapper {
       padding-bottom: 30px;
+
 }
 
 .wrapper-inner img {
       max-width: 100%;
 }
 
-.secondbox {
-      
-      
+.firstbox {
+      border: thick solid black;
+
 }
 
-.secondbox img:hover {
-      opacity: 0.5;
-}
-
-.secondbox i {
-      position: absolute;
-      top: 40%;
-      left: 45%;
-      /*color: white;*/
-}
-
-.secondbox i:hover {
+.secondbox:hover {
       color: black;
+      cursor: pointer;
+      
 }
 
 
@@ -128,31 +128,42 @@ Content Boxes
 }
 
 .thirdbox i {
-      padding-bottom: 50px;
+      padding-bottom: 60px;
+
 }
 
-.thirdbox:hover {
-      opacity: 0.5;
+
+
+.story-logo:hover {
+      color: #b89b7e;
+      cursor: pointer;
 }
 
-.forthbox h2 {
-      font-weight: 700;
-      font-size: 3.5em;
+.forthbox:hover{
+      cursor: pointer;
 }
-
 
 
 
 .fifthbox h2 {
       font-weight: 700;
       font-size: 3.5em;
-      padding-top: 0px;
-      margin-top: 0px;
+      padding-bottom: 60px;
 }
 
 .fifthbox img {
       padding-top: 25%;
+
 }
+
+.fifthbox h2:hover,
+.fifthbox img:hover {
+      cursor: pointer;
+      color: #b89b7e;
+
+}
+
+
 
   /*=====================================================================================================
       Cast and Story content
@@ -189,11 +200,7 @@ Content Boxes
       margin-bottom: 25px;
 }
 
-.cast-logo {
-      z-index: 1;
-      position: relative;
-      top: -200px;
-}
+
 
 
 
@@ -238,8 +245,16 @@ Media Queries
       }
 
       .thirdbox h2 {
-            padding-top: 30%;
+            padding-top: 38%;
+            font-size: 40px;
       }
+
+
+      .fifthbox h2 {
+            font-size: 40px;
+      }
+
+
 
 
 
