@@ -12,7 +12,7 @@ $(document).ready(function(){
 
 	// Show and hide Story Content
 
-		$( ".thirdbox" ).click(function() {
+		$( ".thirdbox, .story-nav" ).click(function() {
 		  $( ".story-content" ).toggle( "slow", function() {
 		    // Animation complete.
 		  });
@@ -20,7 +20,7 @@ $(document).ready(function(){
 
 	// Show and hide Cast Content
 
-		$( ".forthbox" ).click(function() {
+		$( ".forthbox, .cast-nav" ).click(function() {
 		  $( ".cast-content" ).toggle( "slow", function() {
 		    // Animation complete.
 		  });
