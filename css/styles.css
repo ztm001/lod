@@ -31,45 +31,26 @@ body {
 
 
   /*=====================================================================================================
-Main Navigation
+Mobile Navigation and Desktop Dogtown Logo
 =====================================================================================================*/
-
-
-
-.slicknav_menu {
-      display:block;
-}
-
- #menu {
-            display:none;
-      }
-
-.main-nav {
-      
-}
-
-.item-nav {
-      font-size: 1.5em;
-      color: black;
-
+#arrow-toggle:hover {
+      color: #b89b7e;
+      cursor: pointer;
 }
 
 .item-logo {
       padding: 0;
 }
- 
-.main-nav a {
-      text-decoration: none;
-      color: black;    
-}
-
-.main-nav a:hover {
-      color: #b89b7e;    
-}
 
 .dogtown-logo {
       max-height: 100px;
 }
+
+.logo-header {
+      padding: 20px 0 40px 0;
+}
+
+
 
 
 
@@ -124,6 +105,7 @@ Content Boxes
       font-weight: 700;
       font-size: 3.5em;
       padding-top: 90px;
+      margin: 0;
 
 }
 
@@ -143,11 +125,15 @@ Content Boxes
       cursor: pointer;
 }
 
+.fifthbox a h2 {
+      color: black;
+}
 
 
 .fifthbox h2 {
       font-weight: 700;
       font-size: 3.5em;
+      margin: 0;
       padding-bottom: 60px;
 }
 
@@ -229,29 +215,24 @@ Media Queries
  
 @media only screen and (min-width: 768px){ 
 
-      .main-nav { 
-            padding: 50px 0 20px 0;  
-      }
 
-
-
-      /* slick nav. #menu is the original menu */
-      #menu {
-            display:none;
-      }
-      
-      .slicknav_menu {
-            display:none;
-      }
 
       .thirdbox h2 {
-            padding-top: 38%;
+            padding-top: 44%;
             font-size: 40px;
       }
 
 
       .fifthbox h2 {
             font-size: 40px;
+      }
+
+      .nav-collapse {
+            display: none;
+      }
+
+      #arrow-toggle {
+            display: none;
       }
 
 

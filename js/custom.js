@@ -8,6 +8,7 @@
 
 $(document).ready(function(){
 
+		$( ".story-content, .cast-content" ).hide();
 
 	// Show and hide Story Content
 
@@ -26,6 +27,10 @@ $(document).ready(function(){
 		});
 
 
+	// fancy box plug in 
+
+
+		$(".fancybox").fancybox();
 
 
 
@@ -37,4 +42,6 @@ $(document).ready(function(){
 
 
 
-});
+
+
+});  //   closing document

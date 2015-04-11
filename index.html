@@ -9,10 +9,14 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/slicknav.css" />
+    <link rel="stylesheet" href="css/responsive-nav.css">
     <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,15 +32,24 @@ Mobile Nav
 ====================================================================================== -->
 
 
-    <ul id="menu">
-      <li><a href="#">TRAILER</a></li>
-      <li><a href="#">STORY</a></li>
-      <li><a href="#">CAST</a></li>
-      <li><a href="#">FULL MOVIE</a></li>
-    </ul>
+    <i id="arrow-toggle" class="fa fa-angle-down fa-5x"></i>
+
+      <nav class="nav-collapse">
+        <ul>
+          <li><a href="#">TRAILER</a></li>
+          <li><a href="#">STORY</a></li>
+          <li><a href="#">CAST</a></li>
+          <li><a href="#">FULL MOVIE</a></li>
+        </ul>
+      </nav>
+
+    
+
+
+    
 
 <!--  ======================================================================================
-Bootstrap nav
+Bootstrap nav logo
 ====================================================================================== -->
 
    <div class="wrapper">
@@ -45,27 +58,13 @@ Bootstrap nav
 
       
 
-          <!-- <div class="container">
-            <div class="row main-nav">
-
-                  <div class="item-nav col-xs-6 col-sm-2 col-sm-offset-1">
-                        <a href="#">TRAILER</a>
-                  </div>
-                  <div class="item-nav col-xs-6 col-sm-2">
-                        <a href="#">FULL MOVIE</a>
-                  </div>
-                  <div class="item-logo col-sm-2 hidden-xs clearfix">
+          <div class="container logo-header">
+            <div class="row main-nav">      
+                  <div class="item-logo col-sm-2 col-sm-offset-5 hidden-xs clearfix">
                         <img src="images/dogtown1.gif" alt="dogtown logo" class="dogtown-logo img-responsive center-block" href="#">
                   </div>
-                  <div class="item-nav col-xs-6 col-sm-2">
-                        <a href="#">CAST</a>
-                  </div>
-                  <div class="item-nav col-xs-6 col-sm-2">
-                        <a href="#">STORY</a>
-                  </div>
-
             </div> 
-          </div>  -->
+          </div> 
 
 <!--  ======================================================================================
 First row main boxes
@@ -84,8 +83,11 @@ First row main boxes
                       <img src="images/title.png" alt="Lords of Dogtown title image">
                   </div>
 
-                  <div class="secondbox col-sm-4">  
-                      <img src="images/night.jpg" alt="Jay Adams Skateboarding image">
+                  <div class="secondbox col-sm-4"> 
+                      <a class="fancybox fancybox.iframe" href="https://www.youtube.com/embed/BmXeGwbGVCE">
+                          <img src="images/night.jpg" alt="Jay Adams Skateboarding image">
+                      </a>
+                      
                   </div>
 
                   <div class="thirdbox col-sm-4">
@@ -152,8 +154,10 @@ First row main boxes
                   </div>
 
                   <div class="fifthbox col-sm-4">
-                        <img src="images/full-movie.png" alt="Find full movie icon"> 
-                        <h2>FULL MOVIE</h2>    
+                        <a href="https://itunes.apple.com/us/movie/lords-of-dogtown/id270006651" target="blank">
+                          <img src="images/full-movie.png" alt="Find full movie icon"> 
+                          <h2>FULL MOVIE</h2>
+                        </a>
                   </div>
 
                   <div class="sixthbox col-sm-4">
@@ -182,13 +186,15 @@ First row main boxes
     
 
   <script src="js/jquery-1.11.2.js"></script>
-  <script src="js/jquery.slicknav.js"></script>
+  <script src="js/responsive-nav.js"></script>
   <script src="js/custom.js"></script>
+  <script type="text/javascript" src="source/jquery.fancybox.pack.js?v=2.1.5"></script>
   <script>
 
-        $(function(){
-          $('#menu').slicknav();
-        });
+      
+        var nav = responsiveNav(".nav-collapse");
+
+
 
   </script>
 
